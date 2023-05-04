@@ -187,7 +187,7 @@ function clouds() {
 			Math.random()*500 - 450
 		);
 		cloud.rotation.x = 1.16;
-		cloud.rotation.y = -0.12;
+		cloud.rotation.y = -10.12;
 		cloud.rotation.z = Math.random()*360;
 		cloud.material.opacity = 0.10;
 		cloudVertices.push(cloud);
