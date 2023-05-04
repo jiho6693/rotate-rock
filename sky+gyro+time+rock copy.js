@@ -48,7 +48,7 @@ startButton.addEventListener( 'click', function () {
 				gltf.scene.traverse( function ( child ){
 				child.castShadow = true;
 				child.receiveShadow = true;
-				child.userData.link = "1";
+				child.userData.link = "https://jiho6693.github.io/midterm/";
 				});
 					scene.add( gltf.scene );
 
@@ -467,9 +467,9 @@ function onMouseClick( event) {
 		const { link } = intersects[0].object.userData;
 		if (link === '1'){
 	    }
-		// else {
-		// window.location.href = link, '_blank';
-	    // }
+		else {
+		window.location.href = link, '_blank';
+	    }
     }
 
 }
