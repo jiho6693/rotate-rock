@@ -48,7 +48,7 @@ startButton.addEventListener( 'click', function () {
 				gltf.scene.traverse( function ( child ){
 				child.castShadow = true;
 				child.receiveShadow = true;
-				child.userData.link = "https://jiho6693.github.io/midterm/";
+				child.userData.link = "https://jiho6693.github.io/final_main_rotate/";
 				});
 					scene.add( gltf.scene );
 
