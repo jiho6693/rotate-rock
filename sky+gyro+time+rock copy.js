@@ -6,8 +6,28 @@ import { Sky } from './Skysource.js';
 import { DeviceOrientationControls } from './DeviceOrientationControls1.js';
 
 const apiKey = "2fcd83828c7a6dd5b3be29bc0b6fdd9c"
-let lat = "41.825226"; 
-let lon = "-71.418884";
+			let lat;
+			let lon;
+			// let lat = "41.825226"; 
+			// let lon = "-71.418884";
+
+			function success({ coords, timestamp }) {
+				const latitude = coords.latitude;   // 위도
+				const longitude = coords.longitude; // 경도
+				
+			latitude = lat;
+			longitude = lon;
+			}
+	
+			function getUserLocation() {
+				if (!navigator.geolocation) {
+					lat = "41.825226"; 
+					lon = "-71.418884";
+				}
+				navigator.geolocation.watchPosition(success);
+			}
+	
+			getUserLocation();
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat='+ lat + '&lon=' + lon +'&units=imperial&appid='+ apiKey +'';
 
