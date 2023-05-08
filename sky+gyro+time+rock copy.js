@@ -17,12 +17,14 @@ const apiKey = "2fcd83828c7a6dd5b3be29bc0b6fdd9c"
 				
 			latitude = lat;
 			longitude = lon;
+			alert(latitude,longitude);
 			}
 	
 			function getUserLocation() {
 				if (!navigator.geolocation) {
 					lat = "41.825226"; 
 					lon = "-71.418884";
+					alert("where are u");
 				}
 				navigator.geolocation.watchPosition(success);
 			}
