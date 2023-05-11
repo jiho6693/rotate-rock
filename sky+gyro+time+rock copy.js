@@ -332,7 +332,7 @@ function cloudSky() {
 	}
 
 		const gui = new GUI();
-		 gui.add( effectController, 'elevation', 0, 180, 0.1 ).onChange( guiChanged );
+		//  gui.add( effectController, 'elevation', 0, 180, 0.1 ).onChange( guiChanged );
 		guiChanged();
 
 }
